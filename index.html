@@ -1,10 +1,126 @@
-<DOCTYPE html>
+<!DOCTYPE html>
+
 <html lang="fr">
 <head>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Virtuel</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  
+
+<header>
+    <h1>Musée Virtuel</h1>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#infos">À propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil" class="section">
+    <h2>Bienvenue dans le Musée Virtuel</h2>
+    <p>Explorez des œuvres d’art, des artefacts historiques et bien plus encore dans notre espace immersif.</p>
+</section>
+
+<section id="galerie" class="section">
+    <h2>Galerie Interactive</h2>
+
+    <div class="gallery">
+        <div class="item" onclick="openModal('img1.jpg','Mona Lisa','Léonard de Vinci, 1503')">
+            <img src="img1.jpg" alt="Oeuvre 1">
+            <p>Mona Lisa</p>
+        </div>
+
+        <div class="item" onclick="openModal('img2.jpg','La Nuit étoilée','Vincent Van Gogh, 1889')">
+            <img src="img2.jpg" alt="Oeuvre 2">
+            <p>La Nuit étoilée</p>
+        </div>
+
+        <div class="item" onclick="openModal('img3.jpg','Le Cri','Edvard Munch, 1893')">
+            <img src="img3.jpg" alt="Oeuvre 3">
+            <p>Le Cri</p>
+        </div>
+    </div>
+</section>
+
+<section id="infos" class="section">
+    <h2>À propos du musée</h2>
+    <p>Ce musée virtuel est conçu pour offrir une expérience accessible et immersive à tous.</p>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musée Virtuel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Musée Virtuel</h1>
+    <nav>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#galerie">Galerie</a></li>
+            <li><a href="#infos">À propos</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="accueil" class="section">
+    <h2>Bienvenue dans le Musée Virtuel</h2>
+    <p>Explorez des œuvres d’art, des artefacts historiques et bien plus encore dans notre espace immersif.</p>
+</section>
+
+<section id="galerie" class="section">
+    <h2>Galerie Interactive</h2>
+
+    <div class="gallery">
+        <div class="item" onclick="openModal('img1.jpg','Mona Lisa','Léonard de Vinci, 1503')">
+            <img src="img1.jpg" alt="Oeuvre 1">
+            <p>Mona Lisa</p>
+        </div>
+
+        <div class="item" onclick="openModal('img2.jpg','La Nuit étoilée','Vincent Van Gogh, 1889')">
+            <img src="img2.jpg" alt="Oeuvre 2">
+            <p>La Nuit étoilée</p>
+        </div>
+
+        <div class="item" onclick="openModal('img3.jpg','Le Cri','Edvard Munch, 1893')">
+            <img src="img3.jpg" alt="Oeuvre 3">
+            <p>Le Cri</p>
+        </div>
+    </div>
+</section>
+
+<section id="infos" class="section">
+    <h2>À propos du musée</h2>
+    <p>Ce musée virtuel est conçu pour offrir une expérience accessible et immersive à tous.</p>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <span class="close" onclick="closeModal()">&times;</span>
+    <img id="modal-img">
+    <h3 id="modal-title"></h3>
+    <p id="modal-desc"></p>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
