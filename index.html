@@ -2,104 +2,83 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Musée virtuel - Blockhaus Lyssois</title>
+    <title>Musée virtuel – Blockhaus lyssois</title>
     <style>
         body {
             margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #ffffff;
-            color: #000;
+            font-family: Arial, sans-serif;
+            background-image: url("arriereplan.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .header {
+            background-color: rgba(200, 200, 200, 0.9);
             text-align: center;
-        }
-
-        /* Titre principal */
-        header {
-            padding: 20px 10px;
-            border-bottom: 3px solid black;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 36px;
+            padding: 20px;
+            font-size: 32px;
             font-weight: bold;
         }
 
-        /* Contenu principal */
-        main {
-            padding: 60px 20px;
+        .container {
+            text-align: center;
+            margin-top: 50px;
         }
 
-        /* Boutons encadrés */
-        .box {
+        .button {
             display: inline-block;
+            background-color: #e0e0e0;
             border: 3px solid black;
             padding: 20px 40px;
-            margin: 20px;
+            margin: 15px;
             font-size: 20px;
-            font-weight: bold;
             cursor: pointer;
         }
 
-        /* Grand bouton */
-        .box.large {
-            width: 60%;
-            max-width: 600px;
+        .button.large {
+            width: 400px;
             font-size: 26px;
         }
 
-        /* Ligne de boutons */
-        .button-row {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+        .button.medium {
+            width: 300px;
+        }
+
+        .row {
             margin-top: 40px;
-        }
-
-        .button-row .box {
-            font-size: 18px;
-            padding: 15px 25px;
-        }
-
-        /* Section nouveautés */
-        .news {
-            margin-top: 120px;
-        }
-
-        .news .box {
-            width: 50%;
-            max-width: 500px;
-            font-size: 28px;
-        }
-
-        /* Effet hover */
-        .box:hover {
-            background-color: #000;
-            color: #fff;
         }
     </style>
 </head>
 <body>
 
-    <header>
-        <h1>musée virtuel du groupe les blockhaus lyssois</h1>
-    </header>
+    <div class="header">
+        musée virtuel du groupe les blockhaus lyssois
+    </div>
 
-    <main>
-        <div class="box large">
+    <div class="container">
+
+        <div class="button large">
             Visite du musée
         </div>
 
-        <div class="button-row">
-            <div class="box">plus d’information</div>
-            <div class="box">chapitres personnalisées</div>
-            <div class="box">visite virtuelle d’un blockhaus</div>
+        <div class="row">
+            <div class="button medium">plus d’information</div>
+            <div class="button medium">chapitres personnalisées</div>
+            <div class="button medium">visite virtuelle d’un blockhaus</div>
         </div>
 
-        <div class="news">
-            <div class="box">nouveautés</div>
+        <div class="row">
+            <div class="button large">nouveautés</div>
         </div>
-    </main>
+
+        <div class="row">
+            <div class="button large">notre site internet</div>
+        </div>
+
+    </div>
 
 </body>
 </html>
+
 
