@@ -1,84 +1,52 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Musée virtuel – Blockhaus lyssois</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background-image: url("arriereplan.jpg");
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-        }
-
-        .header {
-            background-color: rgba(200, 200, 200, 0.9);
-            text-align: center;
-            padding: 20px;
-            font-size: 32px;
-            font-weight: bold;
-        }
-
-        .container {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #e0e0e0;
-            border: 3px solid black;
-            padding: 20px 40px;
-            margin: 15px;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-        .button.large {
-            width: 400px;
-            font-size: 26px;
-        }
-
-        .button.medium {
-            width: 300px;
-        }
-
-        .row {
-            margin-top: 40px;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musé Virtuel par LesBlockhausLyssois</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header><H1>Musé virtuel du groupe LesBlockhausLyssois</H1></header>
 
-    <div class="header">
-        musée virtuel du groupe les blockhaus lyssois
+    <nav>
+        <ul>
+            <li><a href="#acc"><button>Accueil</button></a></li>
+            <li><a href="#visite"><button>Visite du musée</button></a></li>
+            <li><a href="#info"><button>Plus d'informations</button></a></li>
+            <li><a href="#chapperso"><button>Chapitre personalisées</button></a></li>
+            <li><a href="#visvirtblock"><button>Visite virtuelle d'un blockhaus</button></a></li>
+            <li><a href="#nouv"><button>Nouveautés</button></a></li>
+            <li><a href="https://lesblockhauslyssois-lbl.github.io/LBL/"><button>Notre site internet</button></a></li>
+        </ul>
+    </nav>
+
+    <div id="acc" class="grandiv active">
+        <p>page d'accueil — bienvenue</p>
+    </div>
+    
+    <div id="visite" class="grandiv">
+        <p>onglet visite du musé</p>
+    </div>
+    
+    <div id="info" class="grandiv">
+        <p>onglet plus d'informations</p>
     </div>
 
-    <div class="container">
-
-        <div class="button large">
-            Visite du musée
-        </div>
-
-        <div class="row">
-            <div class="button medium">plus d’information</div>
-            <div class="button medium">chapitres personnalisées</div>
-            <div class="button medium">visite virtuelle d’un blockhaus</div>
-        </div>
-
-        <div class="row">
-            <div class="button large">nouveautés</div>
-        </div>
-
-        <div class="row">
-            <div class="button large">notre site internet</div>
-        </div>
-
+    <div id="chapperso" class="grandiv">
+        <p>onglet chapitre personalisées</p>
     </div>
 
+    <div id="visvirtblock" class="grandiv">
+        <p>onglet visite virtuelle d'un blockhaus</p>
+    </div>
+
+    <div id="nouv" class="grandiv">
+        <p>onglet nouveautés</p>
+    </div>
+
+
+
+    <script src="scripte.js"></script>
 </body>
 </html>
-
-
